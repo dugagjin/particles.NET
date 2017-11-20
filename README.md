@@ -4,7 +4,7 @@ When I saw [this](https://marcbruederlin.github.io/particles.js/) or [this](http
 
 <img src="https://media.giphy.com/media/xT0xenwzp5JdB6Obss/giphy.gif">
 
-If you want the same screensaver as the one shown on the GIF then you can download the *defautScreenSaver.scr* file added to this repository. Once donwloaded you can right click on it and to choose install.
+If you want the same screensaver as the one shown on the GIF then you can download the *defautScreenSaver.scr* file added to this repository. Once downloaded you can right click on it and to choose install.
 
 ## Create screensaver from the code
 
@@ -17,7 +17,7 @@ If you want the same screensaver as the one shown on the GIF then you can downlo
 
 ## Options
 
-You can change de global parameters to customize it.
+You can change the global parameters to customize it.
 
 ```
 private const int Threshold = 200;
