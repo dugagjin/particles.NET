@@ -1,10 +1,10 @@
 # particles.NET
 
-When I saw the work like [this](https://marcbruederlin.github.io/particles.js/) or [this](http://vincentgarreau.com/particles.js/) it looked so cool that I wanted it as screensaver. 
+When I saw [this](https://marcbruederlin.github.io/particles.js/) or [this](http://vincentgarreau.com/particles.js/) it looked so cool that I wanted it as screensaver. 
+
+<img src="https://media.giphy.com/media/xT0xenwzp5JdB6Obss/giphy.gif">
 
 If you want the same screensaver as the one shown on the GIF then you can download the *defautScreenSaver.scr* file added to this repository. Once donwloaded you can right click on it and to choose install.
-
-[gif](https://i.imgur.com/Ss0tcRh.gifv)
 
 ## Create screensaver from the code
 
