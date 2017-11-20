@@ -77,7 +77,7 @@ namespace screensaver {
 
     public interface IParticle {
         void Update();
-        Ellipse Form { get; }
+        Shape Form { get; }
         Point Position { get; }
         int Size { get; }
     }
@@ -111,7 +111,7 @@ namespace screensaver {
             if (_position.Y > SystemParameters.PrimaryScreenHeight || _position.Y < 0) _velocity.Y *= -1;
         }
 
-        Ellipse IParticle.Form => _form;
+        Shape IParticle.Form => _form;
         Point IParticle.Position => _position;
         int IParticle.Size => _size;
     }
