@@ -20,7 +20,7 @@ namespace screensaver {
         /// </summary>
         private const int Threshold = 200;
         private const int NumberOfParticles = 100;
-        private const int RefreshSpeed = 33;
+        private const int RefreshSpeed = 15;
         private Color _color = Color.FromArgb(0, 82, 148, 226);
         private readonly Brush _backgroundColor = new SolidColorBrush(Color.FromRgb(48, 54, 66));
 
@@ -86,7 +86,6 @@ namespace screensaver {
         private Point _position;
         private Point _velocity;
         private readonly Ellipse _form;
-        private readonly int _size;
 
         public Particle(Random random, Color color) {
             _position.X = random.Next(0, (int)SystemParameters.PrimaryScreenWidth);
@@ -95,11 +94,11 @@ namespace screensaver {
             _velocity.Y = random.Next(-100, 101) / 200.0;
 
             color.A = (byte) random.Next(128, 255);
-            _size = random.Next(3, 6);
+            var size = random.Next(3, 6);
             _form = new Ellipse {
                 Fill = new SolidColorBrush(color),
-                Width = _size,
-                Height = _size
+                Width = size,
+                Height = size
             };
         }
 
@@ -113,6 +112,6 @@ namespace screensaver {
 
         Shape IParticle.Form => _form;
         Point IParticle.Position => _position;
-        int IParticle.Size => _size;
+        int IParticle.Size => (int)_form.Width;
     }
 }
