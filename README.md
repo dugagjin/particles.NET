@@ -30,7 +30,7 @@ private readonly Brush _backgroundColor = new SolidColorBrush(Color.FromRgb(48, 
 - Threshold: distance in pixels in which the lines start to be visible
 - NumberOfParticles: self-explainatory
 - RefreshSpeed: The time between frames in ms
-- _color: color of the lines
+- _color: color of the lines and particles
 - _backgroundColor: color of the canvas
 
 
