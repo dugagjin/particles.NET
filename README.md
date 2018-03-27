@@ -19,7 +19,7 @@ If you want the same screensaver as the one shown on the GIF then you can downlo
 
 You can change the global parameters to customize it.
 
-```
+```C#
 private const int Threshold = 200;
 private const int NumberOfParticles = 100;
 private const int RefreshSpeed = 33;
@@ -38,7 +38,7 @@ private readonly Brush _backgroundColor = new SolidColorBrush(Color.FromRgb(48, 
 
 If you don't like dots but want to have other shapes such as a star then you can create a new class which extends to this interface:
 
-```
+```C#
 public interface IParticle {
     void Update();
     Shape Form { get; }
@@ -49,12 +49,12 @@ public interface IParticle {
 
 Once done you only have to change this:
 
-```
+```C#
 var particles = Enumerable.Range(0, NumberOfParticles).Select(element => new Particle(random, _color)).ToList();
 ```
 
 To:
 
-```
+```C#
 var particles = Enumerable.Range(0, NumberOfParticles).Select(element => new YOURCUSTOMCLASS(...)).ToList();
 ```
